@@ -12,3 +12,15 @@ Unmarked, not having any tracks or paths.
 Lab Part 4 - Stage Changes
 1. Why do you think Git requires a staging area?
 Git requires a staging area because it lets you choose what you want to include in your next commit.
+
+Lab Part 5 - Commit Changes
+1. What is the commit message? 
+README file created
+2. What is the display after running git log?
+Author: Tyler <yktvfrxst@gmail.com>
+Date:   Tue Sep 1 15:27:49 2026 -0400
+
+    README file created
+Lab Part 8 - Make Another Change
+1. Do you see the changes in the remote repository?
+Yes, I do see the changes in the remote repository.

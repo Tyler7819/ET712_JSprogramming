@@ -1,0 +1,14 @@
+1. What message appears after running git init?
+Initialized empty Git repository in C:/Users/Student/Desktop/LAB0_GitLab/.git/
+2.What hidden folder was created
+The hidden folder that was created was the git respository folder.
+
+Lab Part 3 - Check Resository Status
+1. What color is the filename?
+Red
+2. What does "Untracked" mean?
+Unmarked, not having any tracks or paths.
+
+Lab Part 4 - Stage Changes
+1. Why do you think Git requires a staging area?
+Git requires a staging area because it lets you choose what you want to include in your next commit.

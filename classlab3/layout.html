@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch — Simple Pricing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 35px;
+            color: #94a3b8;
+            font-size: 1.15rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #082f49;
+        }
+
+        .btn-primary:hover {
+            background: #7dd3fc;
+        }
+
+        .btn-secondary {
+            border: 1px solid #475569;
+            color: #f8fafc;
+        }
+
+        .btn-secondary:hover {
+            background: #1e293b;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 70px 8% 100px;
+            background: #111827;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .pricing-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-header p {
+            color: #94a3b8;
+        }
+
+        .pricing-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 15px;
+            padding: 35px;
+            position: relative;
+        }
+
+        .card.featured {
+            border: 2px solid #38bdf8;
+            transform: translateY(-10px);
+        }
+
+        .popular {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #38bdf8;
+            color: #082f49;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-weight: normal;
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .card li {
+            margin-bottom: 12px;
+            color: #cbd5e1;
+        }
+
+        .card li::before {
+            content: "✓";
+            color: #38bdf8;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .card .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 850px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .card.featured {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 20px;
+            }
+
+            nav .links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 65vh;
+                padding: 60px 20px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .pricing {
+                padding: 60px 20px;
+            }
+
+            .pricing-header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Launch</div>
+
+        <div class="links">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Build something <span>great.</span></h1>
+
+                <p>
+                    A simple platform designed to help you launch, grow,
+                    and manage your next big idea.
+                </p>
+
+                <div class="buttons">
+                    <a href="#pricing" class="btn btn-primary">
+                        Get Started
+                    </a>
+
+                    <a href="#features" class="btn btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+
+            <div class="pricing-header">
+                <h2>Simple pricing</h2>
+                <p>Choose the plan that works best for you.</p>
+            </div>
+
+            <div class="pricing-grid">
+
+                <div class="card">
+                    <h3>Starter</h3>
+
+                    <div class="price">
+                        $9 <span>/month</span>
+                    </div>
+
+                    <ul>
+                        <li>5 projects</li>
+                        <li>Basic analytics</li>
+                        <li>Email support</li>
+                        <li>1 GB storage</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-secondary">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="card featured">
+                    <div class="popular">MOST POPULAR</div>
+
+                    <h3>Pro</h3>
+
+                    <div class="price">
+                        $29 <span>/month</span>
+                    </div>
+
+                    <ul>
+                        <li>Unlimited projects</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                        <li>50 GB storage</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-primary">
+                        Choose Pro
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Enterprise</h3>
+
+                    <div class="price">
+                        $79 <span>/month</span>
+                    </div>
+
+                    <ul>
+                        <li>Unlimited everything</li>
+                        <li>Advanced analytics</li>
+                        <li>24/7 priority support</li>
+                        <li>500 GB storage</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-secondary">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

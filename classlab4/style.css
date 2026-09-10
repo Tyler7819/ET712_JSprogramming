@@ -1,0 +1,72 @@
+h1.title{ color:darkolivegreen;
+      text-align: center;
+      font-family:'Courier New', Courier, monospace
+}
+
+p#subtitle{
+    text-align: right;
+    color:brown;
+    font-size: 20px;
+}
+
+*{
+    color: crimson;
+    text-align: left;
+    font-family: Courier New;
+}
+
+h1.title:first-letter{
+    color:burlywood;
+    font-size: 40px;
+}
+
+.course , #subtitle{
+    text-align: right;
+    font-family: algerian;
+}
+
+.font1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    text-shadow: 2px 2px 3px #ff9ae1a4;
+    color: darkgoldenrod;
+}
+
+.font2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    text-shadow: 1px 1px 2px #ff8bff;
+    color: cadetblue;
+}
+
+.font3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 2px 2px 1px #ee56c0;
+    color: antiquewhite;
+}
+.pageborder, .pageborder1 , .pageborder2{
+    font-size: 30px;
+    border:crimson inset 10px ;
+}
+
+.pageborder{
+    margin-left: 50px;
+    padding-top: 100px;
+}
+
+.pageborder1{
+    margin: 100px;
+    padding: 50px;
+}
+
+.pageborder2{
+    margin: 50px 150px;
+    padding: 1.5rem 80px;
+}

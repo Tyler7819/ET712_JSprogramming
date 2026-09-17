@@ -1,0 +1,18 @@
+body{
+    background-color: brown;
+}
+div.qcc{
+    background-color: crimson;
+    font-size: larger;
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+div.et{
+    border: ridge 10px white;
+    padding: 10px;
+    background-color: sandybrown;
+    width: 50%;
+    margin: 0px auto;
+}
+h2.greet{text-align: center;}

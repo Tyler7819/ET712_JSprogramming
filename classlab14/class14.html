@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassLab14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tyler Willis</h1>
+    <h2>Window events</h2>
+    <section class="maincontainer">
+        <div class="gallerycontainer">
+            <img class="galleryimage" src="images/spring.jpg" alt="image of spring">
+            <img class="galleryimage" src="images/summer.jpg" alt="image of summer">
+            <img class="galleryimage" src="images/autumn.jpg" alt="image of fall">
+            <img class="galleryimage" src="images/winter.jpg" alt="image of winter">
+        </div>
+
+        <button class="btnleft" type="button">&#x276E;</button>
+        <button class="btnright" type="button">&#x276F;</button>
+
+    </section>
+    <form id="myForm">
+        <div class="formsession">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="Type username...">
+        </div>
+
+        <div class="formsession">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter a password...">
+            <p class="passwordmsg">Password must be at least 8 characters</p>
+            <div id="passwordError">error</div>
+        </div>
+
+        <button type="submit" class="submitbtn">Submit</button>
+    </form>
+
+
+
+    <div class="msg">
+        
+    </div>
+
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
